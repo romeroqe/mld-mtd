@@ -3,7 +3,7 @@
 <a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://shields.io/github/license/romeroqe/mld-mtd" alt="License"></a>
 <a href="https://zenodo.org/badge/latestdoi/524132263"><img src="https://zenodo.org/badge/524132263.svg" alt="DOI"></a>
 
-This is a methodology to locate the minimum and maximum depth of the thermocline and its thickness by fitting the sigmoid function to the temperature profiles in the global ocean. This methodology can be applied to both global and local studies in those areas of the ocean where the water column can be divided into three layers according to its thermal structure.
+This is a methodology to locate the minimum and maximum depth of the thermocline, its thickness, and its strength by fitting the sigmoid function to the temperature profiles in the global ocean. This methodology can be applied to both global and local studies in those areas of the ocean where the water column can be divided into three layers according to its thermal structure.
 
 ## Installation
 To use this methodology, simply download the `mldmtd.py` file.
@@ -12,10 +12,10 @@ To use this methodology, simply download the `mldmtd.py` file.
 To locate the minimum and maximum depth of the thermocline of an Argo float profile::
 
 ```python
-from mldmtd import getProfileData, thermocline
+from mldmtd import getProfileDataFromArgoNc, thermocline
 
-df = getProfileData('.../aoml/4900432/profiles/D4900432_106.nc')
-pres_thermo, temp_thermo, pres_mld, temp_mld, r2, N2, pres_pred, temp_pred = thermocline(df)
+df = getProfileDataFromArgoNc('.../aoml/4900432/profiles/D4900432_106.nc')
+pres_mtd, temp_mtd, pres_mld, temp_mld, r2, N2T, pres_pred, temp_pred = thermocline(df)
 ```
 
 ## License
