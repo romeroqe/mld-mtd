@@ -20,8 +20,9 @@ pres_mtd, temp_mtd, pres_mld, temp_mld, r2, N2T, pres_pred, temp_pred = thermocl
 
 ## How to cite
 
-If you use this method, please include a reference to the following:
-
+> [!IMPORTANT]
+> _If you use this method, please include a reference to the following:_
+> 
 > Romero, E., Tenorio-Fernandez, L., Portela, E., Montes-Aréchiga, J., and Sánchez-Velasco, L.: Improving the thermocline calculation over the global ocean, Ocean Sci., 19, 887–901, https://doi.org/10.5194/os-19-887-2023, 2023.
 
 ## License
