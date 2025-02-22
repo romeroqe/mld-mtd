@@ -6,10 +6,13 @@
 This is a methodology to locate the minimum and maximum depth of the thermocline, its thickness, and its strength by fitting the sigmoid function to the temperature profiles in the global ocean. This methodology can be applied to both global and local studies in those areas of the ocean where the water column can be divided into three layers according to its thermal structure.
 
 ## Installation
-To use this methodology, simply download the `mldmtd.py` file.
+To use this methodology, download the `mldmtd.py` file or simply install it with:
+```bash
+pip install mldmtd
+```
 
 ## Demo
-To locate the minimum and maximum depth of the thermocline of an Argo float profile::
+To locate the minimum and maximum depth of the thermocline of an Argo float profile:
 
 ```python
 from mldmtd import getProfileDataFromArgoNc, thermocline
