@@ -1,5 +1,6 @@
 # MLD&MTD  
 <a href="https://github.com/romeroqe/mld-mtd"><img src="https://shields.io/github/v/release/romeroqe/mld-mtd" alt="Release"></a>
+<a href="https://pypi.org/project/mldmtd/"><img src="https://img.shields.io/pypi/v/mldmtd" alt="PyPI Version"></a>
 <a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://shields.io/github/license/romeroqe/mld-mtd" alt="License"></a>
 <a href="https://zenodo.org/badge/latestdoi/524132263"><img src="https://zenodo.org/badge/524132263.svg" alt="DOI"></a>
 
