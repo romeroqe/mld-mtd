@@ -15,7 +15,7 @@ from netCDF4 import Dataset
 def getProfileDataFromTSP(temp, psal, pres, lon, lat):
 	n = len(pres)
 	df = pd.DataFrame({'latitude': np.repeat(lat, n), 'longitude': np.repeat(lon, n), 'pres': pres, 'psal': psal, 'temp': temp})
-	df = df.dropna().reset_index(drop=True)
+	df = df.dropna().sort_values(by="pres").reset_index(drop=True)
 
 	########################
 	# Calculate absolute salinity and conservative temperature
@@ -52,7 +52,7 @@ def getProfileDataFromArgoNc(file, QC_filter=True):
 
 	n = len(PRES_ADJUSTED)
 	df = pd.DataFrame({'date': np.repeat(JULD, n), 'latitude': np.repeat(LATITUDE, n), 'longitude': np.repeat(LONGITUDE, n), 'pres': PRES_ADJUSTED, 'psal': PSAL_ADJUSTED, 'temp': TEMP_ADJUSTED})
-	df = df.dropna().reset_index(drop=True)
+	df = df.dropna().sort_values(by="pres").reset_index(drop=True)
 
 	########################
 	# Calculate absolute salinity and conservative temperature
